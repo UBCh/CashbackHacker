@@ -10,28 +10,28 @@ public class CashbackHackerTest {
 
     @Test
     public void shouldRemain1000() {
-        int expected = 0;
+        int expected = 1000;
         int actual = cashbackHacker.remain(1000);
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldRemain2000() {
-        int expected = 10;
-        int actual = cashbackHacker.remain(2000);
+        int expected = 1;
+        int actual = cashbackHacker.remain(1999);
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldRemain900() {
-        int expected = 0;
+        int expected = 100;
         int actual = cashbackHacker.remain(900);
         assertEquals(expected, actual);
     }
 
     @Test
     public void shouldRemain1100() {
-        int expected = 1;
+        int expected = 900;
         int actual = cashbackHacker.remain(1100);
         assertEquals(expected, actual);
     }
