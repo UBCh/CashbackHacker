@@ -10,7 +10,7 @@ public class CashbackHackerTest {
 
     @Test
     public void shouldRemain1000() {
-        int expected = 1000;
+        int expected = 0;
         int actual = cashbackHacker.remain(1000);
         assertEquals(expected, actual);
     }
