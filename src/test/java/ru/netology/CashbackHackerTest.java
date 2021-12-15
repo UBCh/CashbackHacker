@@ -8,6 +8,7 @@ import static org.testng.Assert.assertEquals;
 public class CashbackHackerTest {
     CashbackHacker cashbackHacker = new CashbackHacker();
 
+
     @Test
     public void shouldRemain1000() {
         int expected = 0;
