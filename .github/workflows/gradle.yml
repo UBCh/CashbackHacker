@@ -25,4 +25,4 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        run: ./gradlew build
+        run: ./gradlew build test
