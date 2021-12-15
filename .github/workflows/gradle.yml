@@ -25,7 +25,4 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Build with Gradle
-     
-      with:
-        arguments: build
+        run: ./gradlew build
