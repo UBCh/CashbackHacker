@@ -25,4 +25,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-        run: ./gradlew build
+    - name: Run the Gradle package task
+      run: ./gradlew -b ci.gradle package
