@@ -25,11 +25,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-     - name: Change wrapper permissions  // 2
-        run: chmod +x ./gradlew
-
-      - name: Run Tests                   // 3
-        run: ./gradlew test
-
-      - name: Build Project               // 4
-        run: ./gradlew assemble
+    - name: Run Tests                 
+      run: ./gradlew test
+    
